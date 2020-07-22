@@ -1,0 +1,35 @@
+#box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#item1{
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+}
+#item2{
+  background-color: yellow;
+   height: 100px;
+   width: 100px;
+}
+#item3{
+   background-color: black;
+   height: 100px;
+   width: 100px;
+}
+#item4{
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+}
+#item5{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+#item6{
+  height: 100px;
+  width: 100px;
+  background-color: gold;
+}

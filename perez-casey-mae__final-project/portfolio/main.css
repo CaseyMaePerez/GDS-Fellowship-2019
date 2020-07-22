@@ -1,0 +1,498 @@
+/**********
+HERO
+**********/
+
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: #666;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/portfolio__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 900px;
+    background-position: 40% 30%;
+
+    color: #fff;
+}
+
+.hero > h3 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.75em;
+    margin: 0 2.5%;
+}
+
+.hero > p {
+    font-weight: 300;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 5%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.hero > h3 .quote-mark {
+    color: #f9c7e2;
+}
+
+.hero > p .em-dash {
+    color: #f9c7e2;
+}
+
+
+
+/**********
+COLUMN STRUCTURE
+**********/
+
+.columns-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 25vh;
+    
+    width: 100%;
+    height: auto;
+
+    background: #000;
+    color: #fff;
+}
+
+
+
+/**********
+COLUMN ONE
+**********/
+
+.column-one {
+    text-align: center;
+}
+
+.column-one > h4 {
+    display: inline-flex;
+    margin: 0 5%;
+    padding-bottom: 5px;
+    font-size: 3em;
+    font-family: "Ubuntu Mono", monospace;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #f9c7e2, #82f2b5) 1;
+}
+
+.column-one > p {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2.5%;
+}
+
+
+
+/**********
+COLUMN TWO
+**********/
+
+.column-two {
+    width: 95%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.column-two a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+
+    color: #fff;
+    margin-bottom: 2.5%;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: #777;
+}
+
+.preview > h5 {
+    font-size: 1.65em;
+    margin: 0;
+    transition: 0.5s ease;
+}
+
+.preview:hover h5,
+.preview:active h5 {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+}
+
+.one {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/css-grid-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top left;
+    transition: 0.5 ease;
+}
+
+.one:hover,
+.one:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/css-grid-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top left;
+}
+
+.two {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/flexbox-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top left;
+    transition: 0.5 ease;
+}
+
+.two:hover,
+.two:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/flexbox-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top left;
+}
+
+.three {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/website-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top right;
+    transition: 0.5 ease;
+}
+
+.three:hover,
+.three:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/website-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top right;
+}
+
+.four {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/gallery-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top left;
+    transition: 0.5 ease;
+}
+
+.four:hover,
+.four:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/gallery-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: top left;
+}
+
+.five {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/navigation-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center center;
+    transition: 0.5 ease;
+}
+
+.five:hover,
+.five:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/navigation-practice.png");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center center;
+}
+
+
+
+/**********
+DIVIDER SHAPES
+**********/
+
+.divider-shapes {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 5vh;
+}
+
+.divider-shapes-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.divider-shapes-area div {
+    position: absolute;
+    display: block;
+    animation: animate 10s linear infinite;
+    -webkit-animation: animate 10s linear infinite;
+    left: -400px;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.divider-shapes-area div:nth-child(1) {
+    top: 68%;
+    width: 400px;
+    height: 40px;
+    background: #3d9aeb;
+    animation-delay: -4s;
+    -webkit-animation-delay: -4s;
+}
+
+.divider-shapes-area div:nth-child(2) {
+    top: 7%;
+    width: 300px;
+    height: 15px;
+    background: #54a6ed;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s;
+}
+
+.divider-shapes-area div:nth-child(3) {
+    top: 74%;
+    width: 200px;
+    height: 30px;
+    background: #82bef2;
+    animation-delay: -10s;
+    -webkit-animation-delay: -10s;
+}
+
+.divider-shapes-area div:nth-child(4) {
+    top: 38%;
+    width: 350px;
+    height: 25px;
+    background: #99caf4;
+    animation-delay: -9s;
+    -webkit-animation-delay: -9s;
+}
+
+.divider-shapes-area div:nth-child(5) {
+    top: 27%;
+    width: 150px;
+    height: 25px;
+    background: #c7e2f9;
+    animation-delay: -3s;
+    -webkit-animation-delay: -3s;
+}
+
+.divider-shapes-area div:nth-child(6) {
+    top: 15%;
+    width: 250px;
+    height: 50px;
+    background: #deeefb;
+    animation-delay: -6s;
+    -webkit-animation-delay: -6s;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+@-webkit-keyframes animate {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+
+
+/**********
+MEDIA QUERIES
+**********/
+
+/* Tablets */
+@media screen and (min-width: 40rem) {
+
+    /**********
+    HERO
+    **********/
+
+    .hero {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero > p {
+        font-size: 2em;
+    }
+
+
+    
+    /**********
+    COLUMN STRUCTURE
+    **********/
+
+    .columns-wrapper {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+
+
+    /**********
+    COLUMN ONE
+    **********/
+
+    .column-one {
+        width: 30%;
+        align-self: flex-start;
+    }
+
+
+
+    /**********
+    COLUMN TWO
+    **********/
+
+    .column-two {
+        width: 60%;
+        align-self: stretch;
+        overflow: auto;
+        padding-right: 2.5%;
+    }
+
+    .column-two a {
+        width: 100%;
+    }
+
+    .preview {
+        width: 100%;
+    }
+
+    .one {
+        background-size: cover;
+    }
+
+    .one:hover {
+        background-size: cover;
+    }
+
+    .two {
+        background-size: cover;
+    }
+
+    .two:hover {
+        background-size: cover;
+    }
+
+    .three {
+        background-size: cover;
+    }
+
+    .three:hover {
+        background-size: cover;
+    }
+
+    .four {
+        background-size: cover;
+    }
+
+    .four:hover {
+        background-size: cover;
+    }
+
+    .five {
+        background-size: cover;
+    }
+
+    .five:hover {
+        background-size: cover;
+    }
+
+
+    /**********
+    DIVIDER SHAPES
+    **********/
+
+    @keyframes animate {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(150vw);
+        }
+    }
+
+    @-webkit-keyframes animate {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(150vw);
+        }
+    }
+
+
+
+    /**********
+    COLUMN TWO
+    **********/
+}
+
+/* Computers */
+@media screen and (min-width: 60rem) {
+
+    /**********
+    HERO
+    **********/
+
+    .hero > h3 {
+        font-size: 3em;
+    }
+
+    .hero > p {
+        font-size: 2em;
+    }
+
+
+
+    /**********
+    DIVIDER SHAPES
+    **********/
+
+    @keyframes animate {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100vw);
+        }
+    }
+
+    @-webkit-keyframes animate {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100vw);
+        }
+    }
+}

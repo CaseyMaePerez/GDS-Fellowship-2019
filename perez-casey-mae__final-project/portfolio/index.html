@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu+Mono:400,700|Ubuntu:300i,400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../templates.css">
+        <link rel="stylesheet" href="main.css">
+
+        <title>Portfolio | pinkkiko</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <a href="../index.html"><img src="../images/logo-white.png" alt="logo" class="logo"></a>
+            <div id="hamburger" onclick="mobileNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="main-nav">
+                <div class="main-nav__links">
+                    <div id="main-nav__home">
+                        <a href="../index.html" class="main-nav__link"><h2>Home</h2></a>
+                    </div>
+                    <a href="index.html" class="main-nav__link selected"><h2>Portfolio</h2></a>
+                    <a href="../gallery/index.html" class="main-nav__link"><h2>Gallery</h2></a>
+                    <a href="../about/index.html" class="main-nav__link"><h2>About</h2></a>
+                    <div id="main-nav__contact">
+                        <a href="../contact/index.html" class="main-nav__link"><h2>Contact</h2></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="grid">
+            <main>
+                <section class="hero">
+                    <h3><span class="quote-mark">"</span>The only thing you sometimes have control over is perspective. You don't have control over your situation. But you have a choice about how you view it.<span class="quote-mark">"</span></h3>
+                    <p><span class="em-dash">&mdash;</span> Chris Pine</p>
+                </section>
+
+                <div class="columns-wrapper">
+                    <section class="column-one">
+                        <h4>Portfolio</h4>
+                        <p>A collection of my best programs, websites, and miscellaneous lines of code.</p>
+
+                        <div class="divider-shapes">
+                            <div class="divider-shapes-area">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="column-two">
+                        <a href="https://codepen.io/caseymaeperez/full/XLqEao">
+                            <div class="preview one">
+                                <h5>CSS Grid Practice</h5>
+                            </div>
+                        </a>
+                        <a href="https://codepen.io/caseymaeperez/full/pXVNmW">
+                            <div class="preview two">
+                                <h5>Flexbox Practice</h5>
+                            </div>
+                        </a>
+                        <a href="https://codepen.io/caseymaeperez/full/rEKvoV">
+                            <div class="preview three">
+                                <h5>Website Practice</h5>
+                            </div>
+                        </a>
+                        <a href="https://codepen.io/caseymaeperez/full/gNGegZ">
+                            <div class="preview four">
+                                <h5>Gallery Practice</h5>
+                            </div>
+                        </a>
+                        <a href="https://codepen.io/caseymaeperez/full/XLpoGM">
+                            <div class="preview five">
+                                <h5>Navigation Practice</h5>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="main-footer">
+                <a href="https://www.linkedin.com/in/casey-mae-perez/"><img src="../images/linkedin-logo.png" alt="LinkedIn"></a>
+                <h6>&copy; 2019 Casey Mae Perez</h6>
+                <p>Last updated: <time datetime="23:22">11:22 PM EST</time>, <time datetime="2019-07-24">07/24/2019</time></p>
+            </footer>
+        </div>
+
+        <script src="../templates.js"></script>
+    </body>
+</html>

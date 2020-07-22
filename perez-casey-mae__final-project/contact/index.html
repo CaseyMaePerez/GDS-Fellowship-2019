@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu+Mono:400,700|Ubuntu:300i,400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../templates.css">
+        <link rel="stylesheet" href="main.css">
+
+        <title>Contact | pinkkiko</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <a href="../index.html"><img src="../images/logo-white.png" alt="logo" class="logo"></a>
+            <div id="hamburger" onclick="mobileNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="main-nav">
+                <div class="main-nav__links">
+                    <div id="main-nav__home">
+                        <a href="../index.html" class="main-nav__link"><h2>Home</h2></a>
+                    </div>
+                    <a href="../portfolio/index.html" class="main-nav__link"><h2>Portfolio</h2></a>
+                    <a href="../gallery/index.html" class="main-nav__link"><h2>Gallery</h2></a>
+                    <a href="../about/index.html" class="main-nav__link"><h2>About</h2></a>
+                    <div id="main-nav__contact">
+                        <a href="index.html" class="main-nav__link selected"><h2>Contact</h2></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="grid">
+            <main>
+                <section class="hero">
+                    <h3><span class="quote-mark">"</span>People aren't all good, and people aren't all bad. We move in and out of darkness and light all of our lives.<span class="quote-mark">"</span></h3>
+                    <p><span class="em-dash">&mdash;</span> Neal Shusterman</p>
+                </section>
+                
+                <section class="contact-form">
+                    <div class="context">
+                        <h4>Contact <img src="../images/logo-color.png" alt="pinkkiko" class="context__name">!</h4>
+                    </div>
+                    <form action="https://formspree.io/caseymaeperez@gmail.com" method="POST" onsubmit="return validate()" name="form1" class="form-wrapper">
+                        <p>* - Indicates required action</p>
+                        <div class="desktop-row">
+                            <input type="text" placeholder="Name*" class="name" name="name" required>
+                            <input type="email" placeholder="Email*" name="email" required>
+                        </div>
+                        <input type="text" placeholder="Subject Line" class="subject" name="subject-line">
+                        <textarea placeholder="Message*" name="message" required></textarea>
+                        <input type="submit">
+                    </form>
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <a href="https://www.linkedin.com/in/casey-mae-perez/"><img src="../images/linkedin-logo.png" alt="LinkedIn"></a>
+                <h6>&copy; 2019 Casey Mae Perez</h6>
+                <p>Last updated: <time datetime="23:22">11:22 PM EST</time>, <time datetime="2019-07-24">07/24/2019</time></p>
+            </footer>
+        </div>
+
+        <script src="../templates.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,553 @@
+/**********
+OVERALL
+**********/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/**********
+HERO
+**********/
+
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: #666;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/about__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 1000px;
+    background-position: right 15%;
+
+    color: #fff;
+}
+
+.hero > h3 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 2.5%;
+}
+
+.hero > p {
+    font-weight: 300;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 5%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.hero > h3 .quote-mark {
+    color: #f9c7e2;
+}
+
+.hero > p .em-dash {
+    color: #f9c7e2;
+}
+
+
+
+/**********
+ABOUT
+**********/
+
+.about-title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 25vh;
+    margin: 5vh 0;
+}
+
+.about-title h4 {
+    margin: 0;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+
+
+/**********
+ANIMATED BG
+**********/
+
+.animated-bg {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+}
+
+.bg-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.bg-area div {
+    position: absolute;
+    display: block;
+    animation: animate 10s linear infinite;
+    -webkit-animation: animate 10s linear infinite;
+    left: -400px;
+    opacity: 0.5;
+}
+
+.bg-area div:nth-child(1) {
+    top: 7%;
+    width: 300px;
+    height: 35px;
+    background: #3d9aeb;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.bg-area div:nth-child(2) {
+    top: 15%;
+    width: 100px;
+    height: 15px;
+    background: #54a6ed;
+    animation-delay: -9s;
+    -webkit-animation-delay: -9s;
+}
+
+.bg-area div:nth-child(3) {
+    top: 66%;
+    width: 350px;
+    height: 25px;
+    background: #6bb2f0;
+    animation-delay: -8s;
+    -webkit-animation-delay: -8s;
+}
+
+.bg-area div:nth-child(4) {
+    top: 85%;
+    width: 275px;
+    height: 30px;
+    background: #82bef2;
+    animation-delay: -5s;
+    -webkit-animation-delay: -5s;
+}
+
+.bg-area div:nth-child(5) {
+    top: 11%;
+    width: 250px;
+    height: 25px;
+    background: #99caf4;
+    animation-delay: -4s;
+    -webkit-animation-delay: -4s;
+}
+
+.bg-area div:nth-child(6) {
+    top: 75%;
+    width: 125px;
+    height: 40px;
+    background: #b0d6f7;
+    animation-delay: -3.5s;
+    -webkit-animation-delay: -3.5s;
+}
+
+.bg-area div:nth-child(7) {
+    top: 35%;
+    width: 325px;
+    height: 30px;
+    background: #c7e2f9;
+    animation-delay: -7s;
+    -webkit-animation-delay: -7s;
+}
+
+.bg-area div:nth-child(8) {
+    top: 52%;
+    width: 300px;
+    height: 30px;
+    background: #deeefb;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+@-webkit-keyframes animate {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+
+
+/**********
+STRUCTURE
+**********/
+
+.about-grid {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 0 2.5%;
+}
+
+.about-grid > div {
+    padding: 0%;
+}
+
+.about-grid > div > div {
+    padding: 2.5%;
+    margin: 15px 0;
+}
+
+.img, .education, .schedule,
+.contact, .skills, .experience,
+.introduction {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: middle;
+    align-items: middle;
+
+    width: 100%;
+
+    color: #fff;
+    border: 5px outset #c7e2f9;
+    background-color: #c7e2f999;  /* #82f2b5 */
+    text-align: center;
+}
+
+.education h2, .schedule h2,
+.contact h2, .skills h2, .experience h2,
+.introduction h2 {
+    font-size: 2em;
+}
+
+.symbol {
+    color: #82f2b5;
+}
+
+.bold-word {
+    font-weight: 700;
+    color: #f9c7e2;
+}
+
+.title {
+    font-weight: 700;
+    color: #f282be;
+}
+
+
+
+/**********
+IMG
+**********/
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/**********
+INTRODUCTION
+**********/
+
+.introduction p {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/**********
+CONTACT
+**********/
+
+.contact h3,
+.contact p {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+}
+
+.contact h3 {
+    margin-bottom: 0;
+}
+
+.contact a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
+/**********
+SKILLS
+**********/
+
+.skills p {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/**********
+EDUCATION
+**********/
+
+.education {
+    text-align: left;
+}
+
+.education h2,
+.education h3,
+.education h5,
+.education p,
+.education li {
+    font-family: "Montserrat", sans-serif;
+}
+
+.education h3,
+.education h5,
+.education p,
+.education li {
+    margin: 0;
+    font-weight: 400;
+}
+
+.education h2 {
+    text-align: center;
+}
+
+.education h3 {
+    font-size: 1.5em;
+}
+
+.education h5 {
+    font-size: 1.125em;
+    font-variant: all-small-caps;
+    color: #82f2b5;
+}
+
+.education p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.education ul {
+    list-style: none;
+}
+
+
+
+/**********
+SCHEDULE
+**********/
+
+.classes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: middle;
+    align-items: middle;
+    
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid #f282be;
+    background-color: #f9c7e2;
+
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.classes p {
+    text-align: center;
+    margin: 0;
+    border: 1px solid #f282be;
+}
+
+.classes p:nth-child(1) {
+    background-color: #f282be;
+}
+
+
+
+/**********
+EXPERIENCE
+**********/
+
+.experience {
+    text-align: left;
+}
+
+.experience h2,
+.experience h3,
+.experience h5,
+.experience p,
+.experience li {
+    font-family: "Montserrat", sans-serif;
+}
+
+.experience h3,
+.experience h5,
+.experience p,
+.experience li {
+    margin: 0;
+    font-weight: 400;
+}
+
+.experience h2 {
+    text-align: center;
+}
+
+.experience h3 {
+    font-size: 1.5em;
+}
+
+.experience h5 {
+    font-size: 1.125em;
+    font-variant: all-small-caps;
+    color: #82f2b5;
+}
+
+.experience p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.experience ul {
+    list-style: none;
+}
+
+
+
+/**********
+FOOTER
+**********/
+
+/* To fix the consistency of the footer */
+.main-footer img {
+    box-sizing: content-box;
+}
+
+
+
+/**********
+MEDIA QUERIES
+**********/
+
+/* Tablets */
+@media screen and (min-width: 40rem) {
+
+    /**********
+    HERO
+    **********/
+
+    .hero {
+        background-size: cover;
+    }
+
+    .hero > h3 {
+        font-size: 1.75em;
+    }
+
+    .hero > p {
+        font-size: 2em;
+    }
+
+
+
+    /**********
+    STRUCTURE
+    **********/
+
+    .about-grid {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .column-one {
+        width: 30%;
+    }
+
+    .column-two {
+        width: 60%;
+    }
+
+    .img, .education, .schedule,
+    .contact, .skills, .experience,
+    .introduction {
+        text-align: left;
+    }
+
+
+
+    /**********
+    CONTACT
+    **********/
+    
+    .contact p {
+        font-size: .85em;
+    }
+
+
+
+    /**********
+    EDUCATION
+    **********/
+
+    .education h2 {
+        text-align: left;
+    }
+}
+
+/* Computers */
+@media screen and (min-width: 60rem) {
+
+    /**********
+    HERO
+    **********/
+
+    .hero > h3 {
+        font-size: 2.5em;
+    }
+
+    .hero > p {
+        font-size: 2.25em;
+    }
+
+
+
+    /**********
+    CONTACT
+    **********/
+    
+    .contact p {
+        font-size: 1em;
+    }
+}

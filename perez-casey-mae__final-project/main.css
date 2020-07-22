@@ -1,0 +1,731 @@
+/**********
+HERO
+**********/
+
+.hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: #666;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/home__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 1500px;
+    background-position: center;
+
+    color: #fff;
+}
+
+.hero > h3 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0 2.5%;
+}
+
+.hero > p {
+    font-weight: 300;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 5%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.hero > h3 .quote-mark {
+    color: #f9c7e2;
+}
+
+.hero > p .em-dash {
+    color: #f9c7e2;
+}
+
+
+
+/**********
+MISSION
+**********/
+
+.mission {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    
+    width: 100%;
+    height: 100vh;
+
+    background: #000;
+    color: #fff;
+}
+
+.mission h3 {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    display: inline-flex;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 2.5%;
+}
+
+.mission h3 .period {
+    color: #82f2b5;
+}
+
+.mission__words {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.mission__word-one,
+.mission__word-two {
+    display: flex;
+    letter-spacing: 2px;
+}
+
+.mission__word-one {
+    align-self: flex-start;
+}
+
+.mission__word-two {
+    align-self: flex-end;
+}
+
+.mission__statement {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+.mission__statement h3 {
+    display: inline;
+    font-size: 2.65em;
+}
+
+.mission__statement .bold-word {
+    border-bottom: 5px solid #f9c7e2;
+}
+
+
+
+/**********
+ANIMATED BG
+**********/
+
+.animated-bg {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 135vh;
+}
+
+.bg-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.bg-area div {
+    position: absolute;
+    display: block;
+    animation: animate 10s linear infinite;
+    -webkit-animation: animate 10s linear infinite;
+    left: -400px;
+    opacity: 0.5;
+}
+
+.bg-area div:nth-child(1) {
+    top: 65%;
+    width: 100px;
+    height: 25px;
+    background: #3d9aeb;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.bg-area div:nth-child(2) {
+    top: 86%;
+    width: 200px;
+    height: 50px;
+    background: #54a6ed;
+    animation-delay: -8s;
+    -webkit-animation-delay: -8s;
+}
+
+.bg-area div:nth-child(3) {
+    top: 60%;
+    width: 150px;
+    height: 10px;
+    background: #6bb2f0;
+    animation-delay: -9s;
+    -webkit-animation-delay: -9s;
+}
+
+.bg-area div:nth-child(4) {
+    top: 13%;
+    width: 175px;
+    height: 50px;
+    background: #82bef2;
+    animation-delay: -4s;
+    -webkit-animation-delay: -4s;
+}
+
+.bg-area div:nth-child(5) {
+    top: 34%;
+    width: 400px;
+    height: 10px;
+    background: #99caf4;
+    animation-delay: -5s;
+    -webkit-animation-delay: -5s;
+}
+
+.bg-area div:nth-child(6) {
+    top: 76%;
+    width: 375px;
+    height: 25px;
+    background: #b0d6f7;
+    animation-delay: -3s;
+    -webkit-animation-delay: -3s;
+}
+
+.bg-area div:nth-child(7) {
+    top: 15%;
+    width: 325px;
+    height: 75px;
+    background: #c7e2f9;
+    animation-delay: -7s;
+    -webkit-animation-delay: -7s;
+}
+
+.bg-area div:nth-child(8) {
+    top: 50%;
+    width: 400px;
+    height: 50px;
+    background: #deeefb;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+@-webkit-keyframes animate {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+
+
+/**********
+ABOUT
+**********/
+
+.about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15vh 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    background: linear-gradient(#999, #000);
+    color: #fff;
+}
+
+.about__img {
+    min-height: 250px;
+    min-width: 250px;
+
+    background: linear-gradient(135deg,  rgba(130, 242, 181, 0.6), rgba(242, 130, 190, 0.6)), url("https://www.getmecoding.com/wp-content/uploads/2017/05/coding.jpg");
+    background-color: #82f2b5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 15px 15px 0 #82bef2;
+    z-index: 1;
+}
+
+.about__dividing-line {
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top: 10vh;
+    background-color: #fff;
+}
+
+.about > p {
+    width: 90%;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.about .about__phrase-one,
+.about .about__phrase-two,
+.about .about__phrase-three {
+    font-weight: 700;
+}
+
+.about .about__phrase-one,
+.about .about__phrase-three {
+    color: #82f2b5;
+}
+
+.about .about__phrase-two {
+    color: #f9c7e2;
+}
+
+
+
+/**********
+DIVIDER SHAPES
+**********/
+
+.divider-shapes {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 5vh;
+}
+
+.divider-shapes-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.divider-shapes-area div {
+    position: absolute;
+    display: block;
+    animation: animate2 10s linear infinite;
+    -webkit-animation: animate2 10s linear infinite;
+    left: -400px;
+    opacity: 0.5;
+}
+
+.divider-shapes-area div:nth-child(1) {
+    top: 32%;
+    width: 175px;
+    height: 50px;
+    background: #3d9aeb;
+    animation-delay: -4s;
+    -webkit-animation-delay: -4s;
+}
+
+.divider-shapes-area div:nth-child(2) {
+    top: 93%;
+    width: 225px;
+    height: 10px;
+    background: #6bb2f0;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s;
+}
+
+.divider-shapes-area div:nth-child(3) {
+    top: 48%;
+    width: 125px;
+    height: 25px;
+    background: #99caf4;
+    animation-delay: -7s;
+    -webkit-animation-delay: -7s;
+}
+
+.divider-shapes-area div:nth-child(4) {
+    top: 15%;
+    width: 100px;
+    height: 50px;
+    background: #c7e2f9;
+    animation-delay: -9s;
+    -webkit-animation-delay: -9s;
+}
+
+.divider-shapes-area div:nth-child(5) {
+    top: 28%;
+    width: 250px;
+    height: 25px;
+    background: #deeefb;
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+@keyframes animate2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+@-webkit-keyframes animate2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300vw);
+    }
+}
+
+
+
+/**********
+SHORTCUTS
+**********/
+
+.shortcuts {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.shortcuts h4 {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0 0 50px 0;
+    border-bottom: 5px double #82f2b5;
+    color: #fff;
+}
+
+.shortcuts__item-boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.shortcuts__item-boxes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 300px;
+    margin: 2.5% 0;
+}
+
+.shortcuts__item-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 300px;
+    /* background-color: #f9c7e2; */
+    margin: 0;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.shortcuts__item-box:hover,
+.shortcuts__item-box:active {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.shortcuts__item-box h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.one {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/portfolio__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center center;
+    transition: 0.5 ease;
+}
+
+.one:hover,
+.one:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/portfolio__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center left;
+}
+
+.two {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/gallery__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center center;
+    transition: 0.5 ease;
+}
+
+.two:hover,
+.two:active {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/gallery__hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center left;
+}
+
+
+
+/**********
+MEDIA QUERIES
+**********/
+
+/* Tablets */
+@media screen and (min-width: 40rem) {
+
+    /**********
+    HERO
+    **********/
+
+    .hero {
+        background-size: cover;
+    }
+
+    .hero > p {
+        font-size: 2em;
+    }
+
+
+
+    /**********
+    MISSION
+    **********/
+
+    .mission {
+        height: 75vh;
+        padding-bottom: 15vh;
+    }
+
+    .mission h3 {
+        font-size: 2.5em;
+    }
+
+    .mission__words {
+        height: 25vh;
+        width: 50%;
+    }
+
+    .mission__statement {
+        width: 75%;
+    }
+
+
+
+    /**********
+    ANIMATED BG
+    **********/
+
+    .animated-bg {
+        height: 110vh;
+    }
+
+
+
+    /**********
+    ABOUT
+    **********/
+
+    .about {
+        padding: 0;
+        flex-flow: row-reverse nowrap;
+        height: 80vh;
+    }
+
+    .about > p {
+        padding-top: 10vh;
+        margin: 0 5vw;
+    }
+
+    .about__img {
+        margin: 0 5vw;
+        min-height: 35vh;
+        min-width: 35vh;
+    }
+
+    .about__dividing-line {
+        top: 5vh;
+    }
+
+
+
+    /**********
+    DIVIDER SHAPES
+    **********/
+
+    .divider-shapes-area div {
+        left: -800px;
+    }
+
+    .divider-shapes-area div:nth-child(1) {
+        width: 700px;
+    }
+
+    .divider-shapes-area div:nth-child(1) {
+        width: 600px;
+    }
+
+    .divider-shapes-area div:nth-child(3) {
+        width: 400px;
+    }
+    
+    .divider-shapes-area div:nth-child(4) {
+        width: 400px;
+    }
+
+
+
+    /**********
+    SHORTCUTS
+    **********/
+
+    .shortcuts {
+        height: 75vh;
+        justify-content: space-around;
+    }
+
+    .shortcuts h4 {
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+    
+    .shortcuts__item-boxes {
+        flex-direction: row;
+    }
+
+    .shortcuts__item-boxes a {
+        width: 40%;
+        margin: 0 2.5%;
+    }
+
+    .shortcuts__item-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .one {
+        background-size: cover;
+    }
+
+    .one:hover {
+        background-size: cover;
+    }
+}
+
+/* Computers */
+@media screen and (min-width: 60rem) {
+
+    /**********
+    HERO
+    **********/
+
+    .hero > h3 {
+        font-size: 3em;
+    }
+
+    .hero > p {
+        font-size: 2em;
+    }
+
+
+
+    /**********
+    MISSION
+    **********/
+    
+    .mission h3 {
+        font-size: 3em;
+    }
+
+
+
+    /**********
+    ABOUT
+    **********/
+
+    .about > p {
+        padding-top: 0;
+    }
+
+
+
+    /**********
+    DIVIDER SHAPES
+    **********/
+
+    .divider-shapes-area div {
+        left: -1000px;
+    }
+
+    .divider-shapes-area div:nth-child(1) {
+        width: 600px;
+    }
+    
+    .divider-shapes-area div:nth-child(2) {
+        width: 450px;
+    }
+    
+    .divider-shapes-area div:nth-child(3) {
+        width: 500px;
+    }
+    
+    .divider-shapes-area div:nth-child(4) {
+        width: 400px;
+    }
+    
+    .divider-shapes-area div:nth-child(5) {
+        width: 500px;
+    }
+
+
+
+    /**********
+    SHORTCUTS
+    **********/
+
+    .shortcuts h4 {
+        font-size: 3em;
+    }
+}

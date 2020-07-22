@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Ubuntu+Mono:400,700|Ubuntu:300i,400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="templates.css">
+        <link rel="stylesheet" href="main.css">
+
+        <title>Home | pinkkiko</title>
+    </head>
+
+    <body class=".grid">        
+        <header id="main-header">
+            <a href="index.html"><img src="images/logo-white.png" alt="logo" class="logo"></a>
+            <div id="hamburger" onclick="mobileNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav id="main-nav">
+                <div class="main-nav__links">
+                    <div id="main-nav__home">
+                        <a href="index.html" class="main-nav__link selected"><h2>Home</h2></a>
+                    </div>
+                    <a href="portfolio/index.html" class="main-nav__link"><h2>Portfolio</h2></a>
+                    <a href="gallery/index.html" class="main-nav__link"><h2>Gallery</h2></a>
+                    <a href="about/index.html" class="main-nav__link"><h2>About</h2></a>
+                    <div id="main-nav__contact">
+                        <a href="contact/index.html" class="main-nav__link"><h2>Contact</h2></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="grid"> 
+            <main>
+                <section class="hero">
+                    <h3><span class="quote-mark">"</span>Creativity is intelligence having fun.<span class="quote-mark">"</span></h3>
+                    <p><span class="em-dash">&mdash;</span> Albert Einstein</p>
+                </section>
+
+                <section class="mission">
+                    <div class="mission__words">
+                        <h3 class="mission__word-one">Stimulating<span class="period">.</span></h3>
+                        <h3 class="mission__word-two">Unpredictable<span class="period">.</span></h3>
+                    </div>
+                    <div class="mission__statement">
+                        <h3>These are the types of games we strive to <span class="bold-word">create</span><span class="period">.</span></h3>
+                    </div>
+
+                    <div class="animated-bg">
+                        <div class="bg-area">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about">
+                    <div class="about__img"></div>
+                    <div class="about__dividing-line"></div>
+             
+                    <p>Our goal is to <span class="about__phrase-one">bring more perspective</span> into story-driven video games. We wish to explore the point of view of more than just the protagonist of the story, allowing for a more <span class="about__phrase-two">thorough understanding of human nature</span>. We believe that people are inherently morally gray, so we seek to <span class="about__phrase-three">embrace diverse viewpoints</span> in each and every one of our stories.</p>
+                </section>
+
+                <div class="divider-shapes">
+                    <div class="divider-shapes-area">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <section class="shortcuts">
+                    <h4>Our Creations:</h4>
+                    <div class="shortcuts__item-boxes">
+                        <a href="portfolio/index.html">
+                            <div class="shortcuts__item-box one">
+                                <h5>Portfolio</h5>
+                            </div>
+                        </a>
+                        <a href="gallery/index.html">
+                            <div class="shortcuts__item-box two">
+                                <h5>Gallery</h5>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <a href="https://www.linkedin.com/in/casey-mae-perez/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+                <h6>&copy; 2019 Casey Mae Perez</h6>
+                <p>Last updated: <time datetime="23:22">11:22 PM EST</time>, <time datetime="2019-07-24">07/24/2019</time></p>
+            </footer>
+        </div>
+    </body>
+
+    <script src="templates.js"></script>
+</html>
